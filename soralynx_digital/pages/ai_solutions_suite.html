@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Solutions Suite - Advanced Enterprise AI Capabilities | Soralynx Digital</title>
+    <meta name="description" content="Explore Soralynx's comprehensive AI solutions including Conversational AI, Predictive Analytics, Computer Vision, and ML Operations with interactive demos and proven ROI." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsoralynxd6083back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 8H28L22 14L24 22L16 18L8 22L10 14L4 8H12L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="text-xl font-bold text-secondary">Soralynx</span>
+                        <span class="text-sm text-accent font-medium">Digital</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative group">
+                        <button class="flex items-center space-x-1 text-primary font-medium transition-colors">
+                            <span>Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <!-- Mega Menu -->
+                        <div class="absolute top-full left-0 w-96 bg-white border border-gray-200 rounded-lg shadow-modal opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 mt-2">
+                            <div class="p-6">
+                                <div class="grid grid-cols-1 gap-4">
+                                    <a href="ai_solutions_suite.html" class="flex items-start space-x-3 p-3 rounded-lg bg-accent-50 border border-accent-200 transition-colors">
+                                        <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-medium text-accent">AI Solutions Suite</h4>
+                                            <p class="text-sm text-accent-700">Conversational AI, ML Operations, Computer Vision</p>
+                                        </div>
+                                    </a>
+                                    <a href="cybersecurity_services.html" class="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                                        <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-medium text-secondary">Cybersecurity Services</h4>
+                                            <p class="text-sm text-secondary-500">Zero Trust, Penetration Testing, Incident Response</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="industry_solutions.html" class="text-secondary-600 hover:text-primary transition-colors">Industries</a>
+                    <a href="about_expertise.html" class="text-secondary-600 hover:text-primary transition-colors">Expertise</a>
+                    <a href="contact_consultation.html" class="btn-primary">Get Consultation</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-secondary-600 hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 py-4">
+                <div class="space-y-2">
+                    <a href="ai_solutions_suite.html" class="block px-4 py-2 text-primary bg-accent-50 rounded-lg font-medium transition-colors">AI Solutions</a>
+                    <a href="cybersecurity_services.html" class="block px-4 py-2 text-secondary-600 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors">Cybersecurity</a>
+                    <a href="industry_solutions.html" class="block px-4 py-2 text-secondary-600 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors">Industries</a>
+                    <a href="about_expertise.html" class="block px-4 py-2 text-secondary-600 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors">Expertise</a>
+                    <a href="contact_consultation.html" class="block px-4 py-2 btn-primary text-center">Get Consultation</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Real-time AI Status Ticker -->
+    <div class="bg-accent text-white py-2 overflow-hidden">
+        <div class="animate-pulse">
+            <div class="flex items-center justify-center space-x-8 text-sm">
+                <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                    <span>AI Models: ACTIVE</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
+                    </svg>
+                    <span>94.7% Accuracy | 2.1s Response Time</span>
+                </div>
+                <div class="text-white/90">Last Updated: 05:06 EST</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-accent-50 via-white to-primary-50 py-20 lg:py-32 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="ai-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                        <circle cx="5" cy="5" r="1" fill="currentColor" opacity="0.3"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#ai-grid)"/>
+            </svg>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center space-x-2 bg-accent-100 text-accent-700 px-4 py-2 rounded-full text-sm font-medium">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Enterprise-Grade AI Solutions</span>
+                        </div>
+                        <h1 class="text-4xl lg:text-6xl font-bold text-secondary leading-tight">
+                            <span class="text-gradient">Intelligent</span><br />
+                            AI Solutions Suite
+                        </h1>
+                        <p class="text-xl text-secondary-600 leading-relaxed max-w-2xl">
+                            Transform your enterprise with our comprehensive AI capabilities. From conversational interfaces to predictive analytics, experience the future of intelligent automation.
+                        </p>
+                    </div>
+
+                    <!-- Key Capabilities -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-600 font-medium">Conversational AI</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-600 font-medium">Predictive Analytics</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-600 font-medium">Computer Vision</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zm10-4a1 1 0 00-1 1v6a1 1 0 102 0V9a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-600 font-medium">ML Operations</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact_consultation.html" class="btn-accent text-center">
+                            Request AI Demo
+                        </a>
+                        <a href="#ai-playground" class="btn-secondary text-center">
+                            Try Interactive Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive AI Demo Preview -->
+                <div class="relative">
+                    <div class="relative bg-white rounded-2xl shadow-enterprise p-8">
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold text-secondary">AI Model Playground</h3>
+                                <div class="status-success">Live Demo</div>
+                            </div>
+                            
+                            <!-- Chat Interface Demo -->
+                            <div class="bg-gray-50 rounded-lg p-4 space-y-3">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-3 max-w-xs">
+                                        <p class="text-sm text-secondary">Hello! I can help you analyze customer sentiment, predict trends, and automate workflows. What would you like to explore?</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3 justify-end">
+                                    <div class="bg-accent rounded-lg p-3 max-w-xs">
+                                        <p class="text-sm text-white">Show me predictive analytics for Q1 sales</p>
+                                    </div>
+                                    <div class="w-8 h-8 bg-secondary-200 rounded-full flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-secondary-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AI Metrics -->
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="text-center">
+                                    <div class="metric-highlight">94.7%</div>
+                                    <div class="text-sm text-secondary-500">Accuracy</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="metric-highlight">2.1s</div>
+                                    <div class="text-sm text-secondary-500">Response</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="metric-highlight">24/7</div>
+                                    <div class="text-sm text-secondary-500">Available</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating AI Elements -->
+                    <div class="absolute -top-4 -right-4 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Capability Matrix -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary mb-4">
+                    Comprehensive AI Capability Matrix
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Explore our full spectrum of AI solutions designed to transform every aspect of your enterprise operations.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Conversational AI -->
+                <div class="card card-hover p-8">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary">Conversational AI</h3>
+                            <p class="text-secondary-600">Natural Language Processing & Understanding</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-secondary mb-3">Key Capabilities</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Multi-language Support (15+ Languages)</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Context-Aware Responses</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Sentiment Analysis & Emotion Detection</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Voice & Text Integration</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-accent-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-accent">97%</div>
+                                <div class="text-sm text-accent-700">Intent Recognition</div>
+                            </div>
+                            <div class="bg-success-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-success">1.8s</div>
+                                <div class="text-sm text-success-700">Avg Response Time</div>
+                            </div>
+                        </div>
+
+                        <button class="w-full btn-secondary" onclick="openDemo('conversational')">
+                            Try Interactive Demo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Predictive Analytics -->
+                <div class="card card-hover p-8">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary">Predictive Analytics</h3>
+                            <p class="text-secondary-600">Advanced Machine Learning Models</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-secondary mb-3">Analytics Capabilities</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Time Series Forecasting</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Customer Behavior Prediction</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Risk Assessment Models</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Anomaly Detection</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-primary-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-primary">92%</div>
+                                <div class="text-sm text-primary-700">Prediction Accuracy</div>
+                            </div>
+                            <div class="bg-warning-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-warning-600">3.2x</div>
+                                <div class="text-sm text-warning-700">ROI Improvement</div>
+                            </div>
+                        </div>
+
+                        <button class="w-full btn-secondary" onclick="openDemo('predictive')">
+                            View Analytics Demo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Computer Vision -->
+                <div class="card card-hover p-8">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-success-100 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary">Computer Vision</h3>
+                            <p class="text-secondary-600">Image & Video Analysis Systems</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-secondary mb-3">Vision Capabilities</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Object Detection & Recognition</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Facial Recognition & Biometrics</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Quality Control Automation</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Real-time Video Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-success-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-success">96%</div>
+                                <div class="text-sm text-success-700">Detection Accuracy</div>
+                            </div>
+                            <div class="bg-accent-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-accent">0.3s</div>
+                                <div class="text-sm text-accent-700">Processing Time</div>
+                            </div>
+                        </div>
+
+                        <button class="w-full btn-secondary" onclick="openDemo('vision')">
+                            Test Vision AI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ML Operations -->
+                <div class="card card-hover p-8">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-warning-100 rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-warning-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zm10-4a1 1 0 00-1 1v6a1 1 0 102 0V9a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary">ML Operations</h3>
+                            <p class="text-secondary-600">Model Deployment & Management</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-secondary mb-3">MLOps Features</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Automated Model Training</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Continuous Integration/Deployment</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Model Performance Monitoring</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-secondary-600">Scalable Infrastructure</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-warning-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-warning-600">99.9%</div>
+                                <div class="text-sm text-warning-700">Model Uptime</div>
+                            </div>
+                            <div class="bg-primary-50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-primary">5min</div>
+                                <div class="text-sm text-primary-700">Deploy Time</div>
+                            </div>
+                        </div>
+
+                        <button class="w-full btn-secondary" onclick="openDemo('mlops')">
+                            Explore MLOps
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive AI Playground -->
+    <section id="ai-playground" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary mb-4">
+                    Interactive AI Playground
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Experience our AI capabilities firsthand with live demonstrations and interactive testing environments.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- NLP Demo -->
+                <div class="card p-6">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-secondary">NLP Analysis</h3>
+                        </div>
+
+                        <div class="space-y-4">
+                            <textarea class="input-field resize-none h-24" placeholder="Enter text for sentiment analysis..." id="nlp-input"></textarea>
+                            
+                            <button class="btn-accent w-full" onclick="analyzeText()">
+                                Analyze Sentiment
+                            </button>
+
+                            <div id="nlp-result" class="hidden bg-gray-50 rounded-lg p-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Sentiment:</span>
+                                        <span id="sentiment-value" class="text-sm font-bold text-success">Positive</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Confidence:</span>
+                                        <span id="confidence-value" class="text-sm font-bold text-accent">94.7%</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Keywords:</span>
+                                        <span id="keywords-value" class="text-sm text-secondary-600">excellent, innovative, reliable</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Recognition Demo -->
+                <div class="card p-6">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-success-100 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-secondary">Image Recognition</h3>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+                                <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                                </svg>
+                                <p class="text-sm text-gray-600">Drop an image here or click to upload</p>
+                                <input type="file" class="hidden" id="image-upload" accept="image/*" />
+                            </div>
+                            
+                            <button class="btn-secondary w-full" onclick="document.getElementById('image-upload').click()">
+                                Upload Image
+                            </button>
+
+                            <div id="vision-result" class="hidden bg-gray-50 rounded-lg p-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Detected:</span>
+                                        <span class="text-sm font-bold text-success">Person, Laptop, Office</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Confidence:</span>
+                                        <span class="text-sm font-bold text-accent">96.2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Predictive Model Demo -->
+                <div class="card p-6">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-secondary">Sales Prediction</h3>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="space-y-3">
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-600 mb-1">Historical Sales ($)</label>
+                                    <input type="number" class="input-field" placeholder="50000" id="sales-input" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-600 mb-1">Market Trend</label>
+                                    <select class="input-field" id="trend-input">
+                                        <option value="positive">Positive</option>
+                                        <option value="neutral">Neutral</option>
+                                        <option value="negative">Negative</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <button class="btn-primary w-full" onclick="predictSales()">
+                                Generate Prediction
+                            </button>
+
+                            <div id="prediction-result" class="hidden bg-gray-50 rounded-lg p-4">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Next Quarter:</span>
+                                        <span id="prediction-value" class="text-sm font-bold text-primary">$67,500</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Growth Rate:</span>
+                                        <span id="growth-value" class="text-sm font-bold text-success">+35%</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Confidence:</span>
+                                        <span class="text-sm font-bold text-accent">92.1%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Use Cases -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary mb-4">
+                    Industry-Specific AI Applications
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Discover how our AI solutions transform operations across different industries with measurable results.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Healthcare AI -->
+                <div class="card card-hover p-8">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 bg-success-100 rounded-2xl flex items-center justify-center mx-auto">
+                            <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zm10-4a1 1 0 00-1 1v6a1 1 0 102 0V9a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="text-center">
+                            <h3 class="text-xl font-bold text-secondary mb-2">Healthcare AI</h3>
+                            <p class="text-secondary-600 mb-4">Diagnostic assistance and patient data analysis with HIPAA compliance</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Diagnostic Accuracy</span>
+                                    <span class="text-sm font-bold text-success">97.3%</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Processing Time Reduction</span>
+                                    <span class="text-sm font-bold text-accent">68%</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Patient Satisfaction</span>
+                                    <span class="text-sm font-bold text-primary">+45%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-sm text-secondary-500">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Medical Image Analysis</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Drug Discovery Acceleration</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Predictive Health Analytics</span>
+                            </div>
+                        </div>
+
+                        <a href="industry_solutions.html" class="btn-secondary w-full">
+                            View Healthcare Solutions
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Financial AI -->
+                <div class="card card-hover p-8">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 bg-warning-100 rounded-2xl flex items-center justify-center mx-auto">
+                            <svg class="w-8 h-8 text-warning-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="text-center">
+                            <h3 class="text-xl font-bold text-secondary mb-2">Financial Services</h3>
+                            <p class="text-secondary-600 mb-4">Fraud detection and algorithmic trading with PCI DSS compliance</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Fraud Detection Rate</span>
+                                    <span class="text-sm font-bold text-success">99.2%</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">False Positive Reduction</span>
+                                    <span class="text-sm font-bold text-accent">73%</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Trading Performance</span>
+                                    <span class="text-sm font-bold text-primary">+28%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-sm text-secondary-500">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Real-time Risk Assessment</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Automated Compliance Monitoring</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Customer Behavior Analysis</span>
+                            </div>
+                        </div>
+
+                        <a href="industry_solutions.html" class="btn-secondary w-full">
+                            View Financial Solutions
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Government AI -->
+                <div class="card card-hover p-8">
+                    <div class="space-y-6">
+                        <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="text-center">
+                            <h3 class="text-xl font-bold text-secondary mb-2">Government & Defense</h3>
+                            <p class="text-secondary-600 mb-4">Data analysis and security applications with FedRAMP authorization</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Data Processing Speed</span>
+                                    <span class="text-sm font-bold text-success">85% Faster</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Threat Detection</span>
+                                    <span class="text-sm font-bold text-accent">98.5%</span>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm font-medium text-secondary-600">Operational Efficiency</span>
+                                    <span class="text-sm font-bold text-primary">+52%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-sm text-secondary-500">
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Intelligence Analysis</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Citizen Service Automation</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Predictive Maintenance</span>
+                            </div>
+                        </div>
+
+                        <a href="industry_solutions.html" class="btn-secondary w-full">
+                            View Government Solutions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary mb-4">
+                    AI Investment ROI Calculator
+                </h2>
+                <p class="text-xl text-secondary-600">
+                    Calculate your potential return on investment with our AI solutions
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-enterprise p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Input Section -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-secondary mb-4">Your Business Parameters</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-600 mb-2">Annual Revenue ($)</label>
+                                <input type="number" class="input-field" placeholder="1000000" id="revenue-input" />
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-600 mb-2">Current IT Budget ($)</label>
+                                <input type="number" class="input-field" placeholder="100000" id="budget-input" />
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-600 mb-2">Employee Count</label>
+                                <input type="number" class="input-field" placeholder="50" id="employees-input" />
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-600 mb-2">Industry</label>
+                                <select class="input-field" id="industry-input">
+                                    <option value="healthcare">Healthcare</option>
+                                    <option value="finance">Financial Services</option>
+                                    <option value="government">Government</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="retail">Retail</option>
+                                    <option value="technology">Technology</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-600 mb-2">AI Solutions Interest</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" value="conversational" />
+                                        <span class="text-sm">Conversational AI</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" value="predictive" />
+                                        <span class="text-sm">Predictive Analytics</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" value="vision" />
+                                        <span class="text-sm">Computer Vision</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" value="mlops" />
+                                        <span class="text-sm">ML Operations</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary w-full" onclick="calculateROI()">
+                            Calculate ROI Projection
+                        </button>
+                    </div>
+
+                    <!-- Results Section -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-secondary mb-4">Projected Results</h3>
+                        
+                        <div id="roi-results" class="space-y-4">
+                            <div class="bg-gray-50 rounded-lg p-6 text-center">
+                                <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                                <p class="text-secondary-600">Enter your business parameters to see personalized ROI projections</p>
+                            </div>
+                        </div>
+
+                        <div id="roi-calculated" class="hidden space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-success-50 rounded-lg p-4 text-center">
+                                    <div id="roi-percentage" class="text-2xl font-bold text-success">3.2x</div>
+                                    <div class="text-sm text-success-700">ROI Multiple</div>
+                                </div>
+                                <div class="bg-accent-50 rounded-lg p-4 text-center">
+                                    <div id="payback-period" class="text-2xl font-bold text-accent">8 months</div>
+                                    <div class="text-sm text-accent-700">Payback Period</div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Annual Cost Savings</span>
+                                        <span id="cost-savings" class="text-sm font-bold text-success">$245,000</span>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Productivity Increase</span>
+                                        <span id="productivity-gain" class="text-sm font-bold text-accent">+42%</span>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm font-medium text-secondary-600">Implementation Cost</span>
+                                        <span id="implementation-cost" class="text-sm font-bold text-primary">$75,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-lg p-4">
+                                <p class="text-sm text-secondary-600 text-center">
+                                    <strong>3-Year Net Benefit:</strong> <span id="net-benefit" class="text-primary font-bold">$485,000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary mb-4">
+                    Technical Architecture & Integration
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Enterprise-grade infrastructure designed for seamless integration with your existing systems.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Architecture Overview -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-secondary mb-6">System Architecture</h3>
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-secondary">Microservices Architecture</h4>
+                                        <p class="text-sm text-secondary-600">Scalable, containerized services with Kubernetes orchestration</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"/>
+                                            <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v3a2 2 0 01-2 2H5.5a1.5 1.5 0 010-3H9a1 1 0 001-1V7H8a2 2 0 01-2-2V4.5a1.5 1.5 0 013 0V5a1 1 0 001 1h1z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-secondary">API-First Design</h4>
+                                        <p class="text-sm text-secondary-600">RESTful APIs with GraphQL support for flexible integration</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-secondary">Cloud-Native Deployment</h4>
+                                        <p class="text-sm text-secondary-600">Multi-cloud support with AWS, Azure, and GCP compatibility</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Integration Capabilities -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-secondary mb-6">Integration Ecosystem</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="card p-4 text-center">
+                                <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Enterprise Systems" class="w-12 h-12 mx-auto mb-3 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <h4 class="font-semibold text-secondary text-sm">ERP Systems</h4>
+                                <p class="text-xs text-secondary-600">SAP, Oracle, Microsoft</p>
+                            </div>
+                            <div class="card p-4 text-center">
+                                <img src="https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="CRM Integration" class="w-12 h-12 mx-auto mb-3 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <h4 class="font-semibold text-secondary text-sm">CRM Platforms</h4>
+                                <p class="text-xs text-secondary-600">Salesforce, HubSpot</p>
+                            </div>
+                            <div class="card p-4 text-center">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Database Systems" class="w-12 h-12 mx-auto mb-3 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <h4 class="font-semibold text-secondary text-sm">Databases</h4>
+                                <p class="text-xs text-secondary-600">SQL, NoSQL, Graph</p>
+                            </div>
+                            <div class="card p-4 text-center">
+                                <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Security Tools" class="w-12 h-12 mx-auto mb-3 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <h4 class="font-semibold text-secondary text-sm">Security Tools</h4>
+                                <p class="text-xs text-secondary-600">SIEM, IAM, DLP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compliance & Certifications -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-secondary mb-6">Compliance & Certifications</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="card p-6 text-center">
+                                <div class="w-16 h-16 bg-success-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-secondary mb-2">SOC 2 Type II</h4>
+                                <p class="text-sm text-secondary-600">Security & availability controls</p>
+                            </div>
+                            
+                            <div class="card p-6 text-center">
+                                <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-secondary mb-2">ISO 27001</h4>
+                                <p class="text-sm text-secondary-600">Information security management</p>
+                            </div>
+                            
+                            <div class="card p-6 text-center">
+                                <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-secondary mb-2">GDPR Ready</h4>
+                                <p class="text-sm text-secondary-600">Data protection compliance</p>
+                            </div>
+                            
+                            <div class="card p-6 text-center">
+                                <div class="w-16 h-16 bg-warning-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-warning-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-secondary mb-2">FedRAMP</h4>
+                                <p class="text-sm text-secondary-600">Government cloud authorization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Metrics -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-secondary mb-6">Performance Guarantees</h3>
+                        <div class="space-y-4">
+                            <div class="card p-4">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h4 class="font-semibold text-secondary">System Uptime</h4>
+                                        <p class="text-sm text-secondary-600">Service level agreement</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-2xl font-bold text-success">99.9%</div>
+                                        <div class="text-sm text-success-600">SLA Guaranteed</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card p-4">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h4 class="font-semibold text-secondary">Response Time</h4>
+                                        <p class="text-sm text-secondary-600">API response latency</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-2xl font-bold text-accent">< 100ms</div>
+                                        <div class="text-sm text-accent-600">P95 Latency</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card p-4">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <h4 class="font-semibold text-secondary">Scalability</h4>
+                                        <p class="text-sm text-secondary-600">Auto-scaling capacity</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-2xl font-bold text-primary">10,000+</div>
+                                        <div class="text-sm text-primary-600">Concurrent Users</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-accent to-primary">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Ready to Transform with AI?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Experience the power of enterprise AI solutions. Schedule a personalized demonstration or request a proof-of-concept for your specific use case.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_consultation.html" class="bg-white text-accent px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Schedule AI Demo
+                </a>
+                <a href="contact_consultation.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-accent transition-colors">
+                    Request Proof of Concept
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 8H28L22 14L24 22L16 18L8 22L10 14L4 8H12L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="text-xl font-bold">Soralynx Digital</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Bridging AI innovation with enterprise security for confident digital transformation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h4 class="font-semibold mb-4">AI Solutions</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#conversational-ai" class="hover:text-accent transition-colors">Conversational AI</a></li>
+                        <li><a href="#predictive-analytics" class="hover:text-accent transition-colors">Predictive Analytics</a></li>
+                        <li><a href="#computer-vision" class="hover:text-accent transition-colors">Computer Vision</a></li>
+                        <li><a href="#ml-operations" class="hover:text-accent transition-colors">ML Operations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Industries -->
+                <div>
+                    <h4 class="font-semibold mb-4">Industries</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="industry_solutions.html" class="hover:text-accent transition-colors">Healthcare</a></li>
+                        <li><a href="industry_solutions.html" class="hover:text-accent transition-colors">Financial Services</a></li>
+                        <li><a href="industry_solutions.html" class="hover:text-accent transition-colors">Government</a></li>
+                        <li><a href="industry_solutions.html" class="hover:text-accent transition-colors">Manufacturing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact_consultation.html" class="hover:text-accent transition-colors">Contact & Consultation</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-accent transition-colors">Documentation</a></li>
+                        <li><a href="cybersecurity_services.html" class="hover:text-accent transition-colors">Security Center</a></li>
+                        <li><a href="about_expertise.html" class="hover:text-accent transition-colors">Expert Team</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 Soralynx Digital. All Rights Reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-accent text-sm transition-colors">Terms of Service</a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-accent text-sm transition-colors">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Demo functions
+        function openDemo(type) {
+            alert(`Opening ${type} AI demo. In a real implementation, this would launch an interactive demonstration.`);
+        }
+
+        function analyzeText() {
+            const input = document.getElementById('nlp-input').value;
+            if (input.trim()) {
+                document.getElementById('nlp-result').classList.remove('hidden');
+                // Simulate analysis results
+                const sentiments = ['Positive', 'Neutral', 'Negative'];
+                const randomSentiment = sentiments[Math.floor(Math.random() * sentiments.length)];
+                const confidence = (Math.random() * 20 + 80).toFixed(1);
+                
+                document.getElementById('sentiment-value').textContent = randomSentiment;
+                document.getElementById('confidence-value').textContent = confidence + '%';
+            }
+        }
+
+        function predictSales() {
+            const sales = document.getElementById('sales-input').value;
+            const trend = document.getElementById('trend-input').value;
+            
+            if (sales) {
+                document.getElementById('prediction-result').classList.remove('hidden');
+                
+                // Simulate prediction calculation
+                let multiplier = 1.35;
+                if (trend === 'negative') multiplier = 0.85;
+                if (trend === 'neutral') multiplier = 1.15;
+                
+                const prediction = Math.round(sales * multiplier);
+                const growth = Math.round((multiplier - 1) * 100);
+                
+                document.getElementById('prediction-value').textContent = '$' + prediction.toLocaleString();
+                document.getElementById('growth-value').textContent = (growth > 0 ? '+' : '') + growth + '%';
+            }
+        }
+
+        function calculateROI() {
+            const revenue = document.getElementById('revenue-input').value;
+            const budget = document.getElementById('budget-input').value;
+            const employees = document.getElementById('employees-input').value;
+            
+            if (revenue && budget && employees) {
+                document.getElementById('roi-results').classList.add('hidden');
+                document.getElementById('roi-calculated').classList.remove('hidden');
+                
+                // Simulate ROI calculation
+                const implementationCost = Math.round(budget * 0.75);
+                const annualSavings = Math.round(revenue * 0.245);
+                const netBenefit = (annualSavings * 3) - implementationCost;
+                const roiMultiple = (netBenefit / implementationCost).toFixed(1);
+                
+                document.getElementById('implementation-cost').textContent = '$' + implementationCost.toLocaleString();
+                document.getElementById('cost-savings').textContent = '$' + annualSavings.toLocaleString();
+                document.getElementById('net-benefit').textContent = '$' + netBenefit.toLocaleString();
+                document.getElementById('roi-percentage').textContent = roiMultiple + 'x';
+            }
+        }
+
+        // Image upload simulation
+        document.getElementById('image-upload').addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                document.getElementById('vision-result').classList.remove('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animation-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, section').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

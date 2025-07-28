@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #0052CC; /* blue-700 - Enterprise trust, technical authority */
+  --color-primary-50: #EBF4FF; /* blue-50 */
+  --color-primary-100: #DBEAFE; /* blue-100 */
+  --color-primary-500: #3B82F6; /* blue-500 */
+  --color-primary-600: #2563EB; /* blue-600 */
+  --color-primary-700: #0052CC; /* blue-700 */
+  --color-primary-800: #1E40AF; /* blue-800 */
+  --color-primary-900: #1E3A8A; /* blue-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #1A1A1A; /* gray-900 - Sophisticated depth, technical precision */
+  --color-secondary-50: #F9FAFB; /* gray-50 */
+  --color-secondary-100: #F3F4F6; /* gray-100 */
+  --color-secondary-200: #E5E7EB; /* gray-200 */
+  --color-secondary-300: #D1D5DB; /* gray-300 */
+  --color-secondary-400: #9CA3AF; /* gray-400 */
+  --color-secondary-500: #6B7280; /* gray-500 */
+  --color-secondary-600: #4B5563; /* gray-600 */
+  --color-secondary-700: #374151; /* gray-700 */
+  --color-secondary-800: #1F2937; /* gray-800 */
+  --color-secondary-900: #1A1A1A; /* gray-900 */
+
+  /* Accent Colors */
+  --color-accent: #00A3FF; /* sky-500 - Innovation signal, AI intelligence */
+  --color-accent-50: #F0F9FF; /* sky-50 */
+  --color-accent-100: #E0F2FE; /* sky-100 */
+  --color-accent-200: #BAE6FD; /* sky-200 */
+  --color-accent-300: #7DD3FC; /* sky-300 */
+  --color-accent-400: #38BDF8; /* sky-400 */
+  --color-accent-500: #00A3FF; /* sky-500 */
+  --color-accent-600: #0284C7; /* sky-600 */
+  --color-accent-700: #0369A1; /* sky-700 */
+  --color-accent-800: #075985; /* sky-800 */
+  --color-accent-900: #0C4A6E; /* sky-900 */
+
+  /* Background Colors */
+  --color-background: #FFFFFF; /* white - Clarity canvas, transparency */
+  --color-surface: #F8F9FA; /* gray-50 - Subtle content separation */
+
+  /* Text Colors */
+  --color-text-primary: #1A1A1A; /* gray-900 - Extended reading comfort */
+  --color-text-secondary: #6B7280; /* gray-500 - Clear hierarchy */
+
+  /* Status Colors */
+  --color-success: #10B981; /* emerald-500 - Security confirmation */
+  --color-success-50: #ECFDF5; /* emerald-50 */
+  --color-success-100: #D1FAE5; /* emerald-100 */
+  --color-success-500: #10B981; /* emerald-500 */
+  --color-success-600: #059669; /* emerald-600 */
+  --color-success-700: #047857; /* emerald-700 */
+
+  --color-warning: #F59E0B; /* amber-500 - Attention without alarm */
+  --color-warning-50: #FFFBEB; /* amber-50 */
+  --color-warning-100: #FEF3C7; /* amber-100 */
+  --color-warning-500: #F59E0B; /* amber-500 */
+  --color-warning-600: #D97706; /* amber-600 */
+  --color-warning-700: #B45309; /* amber-700 */
+
+  --color-error: #EF4444; /* red-500 - Security alerts, critical notifications */
+  --color-error-50: #FEF2F2; /* red-50 */
+  --color-error-100: #FEE2E2; /* red-100 */
+  --color-error-500: #EF4444; /* red-500 */
+  --color-error-600: #DC2626; /* red-600 */
+  --color-error-700: #B91C1C; /* red-700 */
+
+  /* Border Colors */
+  --color-border: #E5E7EB; /* gray-200 */
+  --color-border-light: #F3F4F6; /* gray-100 */
+
+  /* Shadow Colors */
+  --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-modal: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    line-height: 1.2;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary border border-primary px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .card {
+    @apply bg-white rounded-lg border border-gray-200 transition-all duration-300 ease-out;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg hover:border-gray-300;
+    box-shadow: var(--shadow-card);
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-out;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-pattern {
+    background: linear-gradient(135deg, rgba(0, 82, 204, 0.05) 0%, rgba(0, 163, 255, 0.05) 100%);
+  }
+
+  .section-divider {
+    @apply border-t border-gray-200 my-16;
+  }
+
+  .metric-highlight {
+    @apply font-mono text-2xl font-medium text-primary;
+  }
+.status-success  {
+    @apply text-success bg-success-50 border px-3 py-1 rounded-full text-sm font-medium;
+  }
+.status-warning  {
+    @apply text-warning-700 bg-warning-50 border px-3 py-1 rounded-full text-sm font-medium;
+  }
+.status-error  {
+    @apply text-error-700 bg-error-50 border px-3 py-1 rounded-full text-sm font-medium;
+  }
+}
+
+@layer utilities {
+  .animation-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animation-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .shadow-enterprise {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-modal {
+    box-shadow: var(--shadow-modal);
+  }
+}
